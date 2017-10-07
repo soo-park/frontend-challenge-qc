@@ -3,7 +3,7 @@ import Spinner from "react-svg-spinner";
 
 const Preloader = (props) => {
   return (
-    <div className="preloader">
+    <div className="preloader loading">
       <Spinner
         size="64px"
         height="64px"

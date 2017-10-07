@@ -1,6 +1,18 @@
+body {
+  background-color:#eeeeee; 
+}
+
 .board {
-  padding: 3em;
+  padding: 5em;
   margin: 1em;
+  border: 1px solid #cccccc;
+  border-radius: .25rem;
+  background-color: white;
+}
+
+.general-text {
+  font-size: 1em;
+  color: #888888;
 }
 
 /* nav-bar adjustment */
@@ -17,6 +29,10 @@
 }
 
 /* loading font awesome to react */
+.fawesome {
+  color: #888888;
+}
+
 .upload-top-menu-icon:before {
   content: "\f0ee";
 	font-family: FontAwesome;
@@ -27,6 +43,11 @@
   font-family: FontAwesome;
 }
 
+.trash-icon:before {
+  content: "\f014";
+  font-family: FontAwesome;
+}
+
 /* components adjustment */
 .card {
   border: 1px solid #ccc;
@@ -34,38 +55,86 @@
   margin-top: 10px;
 }
 
-.card > .card-body, .card-footer {
-  padding: 0.5em 1em 0.5em 1em;
+.card > .card-top {
+  margin: 5px 2em 5px 1em;
+  font-size: 1.5rem;
+}
+
+.card > .card-top, .card-body, .card-footer {
+  /* padding: 0.5em 1em 0.5em 1em; */
 }
 
 .topbar {
   background-color: rgb(196, 196, 51);
 }
 
-#imgholder {
-  height: 30vh;
-  width: 50vm;
-  background-color: #cccccc;  margin: 0 auto;
-  text-align: center;
-  padding: 10rem 0;
-}
-
 /* flexbox aligner */
 .Aligner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .Aligner-item {
-  max-width: 50%;
+  max-width: 100%;
 }
 
-.Aligner-item--top {
+.Aligner-item.top {
   align-self: flex-start;
 }
 
-.Aligner-item--bottom {
+.Aligner-item.bottom {
   align-self: flex-end;
 }
 
+.Aligner-item.left {
+  justify-content: flex-start;
+}
+
+.Aligner-item.right {
+  justify-content: flex-end;
+  background-color: yellow;  
+}
+
+/*image in item card*/
+#imgholder {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.loading {
+  height: 30vh;
+  width: 50vm;
+  padding: 3.5rem 0;
+}
+
+.preloader {
+  width: auto;
+  height: 200px;
+}
+.preloader.done {
+  animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+  animation-direction: alternate;
+  opacity: 1;
+  visibility: visible; 
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* checkbox style */

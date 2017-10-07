@@ -5,16 +5,14 @@ import TopBar from './TopBar.js';
 const Board = (props) => {
   return (
     <div className="board">
-      <TopBar />
       <div className="container">
-        {/* <div className="col-lg-12"> */}
-          <Cards 
-            appState={props.appState}
-            viewChange={props.viewChange}
-            currentItemChange={props.currentItemChange}
-          />
-        </div>
-      {/* </div> */}
+        <TopBar />
+        <Cards 
+          appState={props.appState}
+          viewChange={props.viewChange}
+          currentItemChange={props.currentItemChange}
+        />
+      </div>
     </div>
   );
 }
