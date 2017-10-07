@@ -2,10 +2,38 @@ import React, { Component } from 'react';
 import Body from './Body.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      view: 'List',
+      items: {},
+      currentItem: null
+    };
+    this.handleCurrentItem = this.handleCurrentItem.bind(this);
+    this.handleViewChange = this.handleViewChange.bind(this);
+  }
+
+  handleCurrentItem(id) {
+    this.setState({currentItem: {}});
+  }
+
+  handleViewChange(view) {
+    this.setState({view: view});
+  }
+
+  // later, put API call here
+  componentWillMount() {
+    this.setState({items: this.props.items})
+  }
+
   render() {
      return (
       <div>
-        <Body />
+        <Body
+          appState={this.state}
+          viewChange={this.handleViewChange}
+          currentItemChange={this.handleCurrentItem}
+        />
       </div>
     );
   }

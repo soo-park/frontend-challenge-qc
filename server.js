@@ -32,7 +32,7 @@ const database = [
   { name: 'Pitch Black Suit', id: 123455, images: {0: "", 1: "", 2: ""}, reaction: {}, selected: false, trashed: false},
   { name: 'Deeper Grey Suit', id: 123456, images: {0: "", 1: "", 2: ""}, reaction: {}, selected: false, trashed: false},
   { name: 'Herringbon Suit', id: 123457, images: {0: "", 1: "", 2: ""}, reaction: {}, selected: false, trashed: false}
-]
+];
 
 // Utility functions
 const findItem = (itemId) => {

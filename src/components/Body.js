@@ -4,7 +4,11 @@ import Board from './Board.js';
 const Body = (props) => {
   return (
     <div className="allscreen">
-      <Board />
+      <Board 
+        appState={props.appState}
+        viewChange={props.viewChange}
+        currentItemChange={props.currentItemChange}
+      />
     </div>
   );
 }
