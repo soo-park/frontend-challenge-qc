@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../static/black.png';
+import img from '../../static/black.png';
 
 class Image extends React.Component {
   constructor(props) {
@@ -20,7 +20,6 @@ class Image extends React.Component {
 
   render() {
     var display = this.getDisplay();
-    console.log(display);
     return (
       <div className="center" id="imgholder">
         {display}

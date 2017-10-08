@@ -3,16 +3,11 @@ body {
 }
 
 .board {
-  padding: 5em;
   margin: 1em;
+  padding-bottom: 20px;
   border: 1px solid #cccccc;
   border-radius: .25rem;
   background-color: white;
-}
-
-.general-text {
-  font-size: 1em;
-  color: #888888;
 }
 
 /* nav-bar adjustment */
@@ -22,6 +17,10 @@ body {
     left: 0;
     text-align: left;
     margin:0 auto;
+}
+
+.navbar {
+  margin-bottom: 0;
 }
 
 .navbar-toggle {
@@ -55,17 +54,14 @@ body {
   margin-top: 10px;
 }
 
-.card > .card-top {
-  margin: 5px 2em 5px 1em;
+.card-element {
+  padding: 0.5rem;
   font-size: 1.5rem;
+  color: #888888;
 }
 
-.card > .card-top, .card-body, .card-footer {
-  /* padding: 0.5em 1em 0.5em 1em; */
-}
-
-.topbar {
-  background-color: rgb(196, 196, 51);
+.card-top {
+  color: black;
 }
 
 /* flexbox aligner */
@@ -112,6 +108,8 @@ body {
   width: auto;
   height: 200px;
 }
+
+/* fade-in animation for the image in item card*/
 .preloader.done {
   animation-name: fade;
 	animation-timing-function: ease-in-out;
@@ -136,5 +134,3 @@ body {
 		opacity: 1;
 	}
 }
-
-/* checkbox style */

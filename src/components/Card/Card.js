@@ -1,5 +1,5 @@
 import React from 'react';
-import Spinner from './Spinner.js';
+import Spinner from '../Common/Spinner.js';
 import CardTop from './CardTop.js';
 import Image from './Image.js';
 import CardName from './CardName.js';
@@ -26,7 +26,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div className="col-lg-3 col-md-6 col-sm-12">
+      <div className="col-lg-3 col-md-3 col-sm-12" >
           <div className="card h-100">
             <CardTop />
             <div className="card-body">

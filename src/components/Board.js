@@ -5,8 +5,8 @@ import TopBar from './TopBar.js';
 const Board = (props) => {
   return (
     <div className="board">
+      <TopBar />
       <div className="container">
-        <TopBar />
         <Cards 
           appState={props.appState}
           viewChange={props.viewChange}

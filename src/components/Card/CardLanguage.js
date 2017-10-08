@@ -2,8 +2,10 @@ import React from 'react';
 
 const CardLanguage = (props) => {
   return (
-    <div>
-      Language
+    <div className="card-element">
+      <div>
+        Language
+      </div>
       <input type="text" />
     </div>
   );

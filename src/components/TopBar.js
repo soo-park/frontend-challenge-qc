@@ -2,15 +2,15 @@ import React from 'react';
 
 const TopBar = (props) => {
   return (
-    <div className="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div className="navbar navbar-default" role="navigation">
       <a className="navbar-brand" >CRIATIVES</a>
       <div className="navbar-collapse collapse">
         <ul className="nav navbar-nav navbar-right">
           <li>
-            <a href="#about"><span className="fawesome upload-top-menu-icon"/> Upload</a>
+            <a href="#about"><span className="upload-top-menu-icon"/> Upload</a>
           </li>
           <li>
-            <a href="#contact"><span className="fawesome add-top-menu-icon"/> Add</a>
+            <a href="#contact"><span className="add-top-menu-icon"/> Add</a>
           </li>
           <li>
             <a> </a>

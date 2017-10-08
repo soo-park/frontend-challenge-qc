@@ -2,8 +2,8 @@ import React from 'react';
 
 const CardName = (props) => {
   return (
-    <div>
-      Creative Name
+    <div className="card-element">
+      <div>Creative Name</div>
       <input type="text" />
     </div>
   );

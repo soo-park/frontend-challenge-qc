@@ -11,12 +11,18 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "bootstrap-loader": "^2.2.0",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.7",
     "react-svg-spinner": "^0.2.0",
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
     "shortid": "^2.2.8"
   },
   "devDependencies": {
