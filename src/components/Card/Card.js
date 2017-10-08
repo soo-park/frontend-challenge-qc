@@ -2,7 +2,6 @@ import React from 'react';
 import Spinner from '../Common/Spinner.js';
 import CardTop from './CardTop.js';
 import Image from './Image.js';
-import CardName from './CardName.js';
 import CardLanguage from './CardLanguage.js';
 import CardBottom from './CardBottom.js';
 
@@ -31,7 +30,9 @@ class Card extends React.Component {
             <CardTop />
             <div className="card-body">
               <Image img={this.state.image}/>
-              <CardName />
+              <div className="card-element">
+                <div>Creative Name</div>
+                <input type="text" placeholder={this.props.item.name}/>              </div>
               <CardLanguage />
               <CardBottom />
           </div>

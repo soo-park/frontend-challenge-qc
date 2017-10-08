@@ -4,7 +4,7 @@ const TopBar = (props) => {
   return (
     <div className="navbar navbar-default" role="navigation">
       <a className="navbar-brand" >CRIATIVES</a>
-      <div className="navbar-collapse collapse">
+      <div className="navbar-collapse">
         <ul className="nav navbar-nav navbar-right">
           <li>
             <a href="#about"><span className="upload-top-menu-icon"/> Upload</a>
