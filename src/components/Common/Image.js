@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../static/black.png';
+import img from '../../static/wedding-suit_Clipart_svg_File.svg';
 
 class Image extends React.Component {
   constructor(props) {
