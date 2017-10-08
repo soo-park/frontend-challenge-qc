@@ -2,14 +2,14 @@ import React from 'react';
 
 const CardTop = (props) => {
   return (
-    <div className="card-element">
-      <span>
-        <input type="checkbox" className="css-checkbox" id="checkbox"/>
-        <span className=""> Creative Loading...</span>
+    <div className="card-element card-top">
+      <span className="card-checkbox">
+        <input type="checkbox" id="card-checkbox"/>
+        <span htmlFor="card-checkbox"> Creative Loading...</span>
       </span>
         
       <span className="right">
-        <span className="trash-icon" />
+        <a><span className="fawesome trash-icon" /></a>
       </span>
     </div>
   );

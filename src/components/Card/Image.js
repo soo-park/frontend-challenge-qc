@@ -12,7 +12,15 @@ class Image extends React.Component {
 
   getDisplay() {
     if (typeof(this.props.img) === "string") {
-      return (<img src={img} alt="suit" className="preloader done"/>)
+      return (
+        <div id="imgholder">
+          <span className="overimage right fa-stack fa-sm">
+            <i className="fa fa-circle fa-stack-2x"></i>
+            <i className="fa fa-pencil fa-stack-1x fa-inverse"></i>
+          </span>
+          <img src={img} alt="suit" className="preloader done"/>
+        </div>
+      )
     } else {
       return this.props.img;
     }
@@ -21,7 +29,7 @@ class Image extends React.Component {
   render() {
     var display = this.getDisplay();
     return (
-      <div className="center" id="imgholder">
+      <div className="center">
         {display}
       </div>
     );

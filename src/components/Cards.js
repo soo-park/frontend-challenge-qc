@@ -5,6 +5,7 @@ const Cards = (props) => {
   var items = props.appState.items;
   return (
       <div className="row">
+        <div className="select-all"> Select All </div>
         {!items.length? null : items.map((item, key) => <Card item={item} key={item.id}/>)}
       </div>
   );

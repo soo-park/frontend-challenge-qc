@@ -24,15 +24,17 @@ class Card extends React.Component {
   }  
 
   render() {
+    console.log(this.state.image);
     return (
-      <div className="col-lg-3 col-md-3 col-sm-12" >
+      <div className="col-lg-3 col-md-3 col-sm-4 col-xs-12" >
           <div className="card h-100">
             <CardTop />
             <div className="card-body">
               <Image img={this.state.image}/>
               <div className="card-element">
                 <div>Creative Name</div>
-                <input type="text" placeholder={this.props.item.name}/>              </div>
+                <input type="text" className="card-input" placeholder={this.props.item.name}/>
+              </div>
               <CardLanguage />
               <CardBottom />
           </div>

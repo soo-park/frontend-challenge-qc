@@ -6,7 +6,7 @@ const CardLanguage = (props) => {
       <div>
         Language
       </div>
-      <input type="text" />
+      <input type="text" className="card-input"/>
     </div>
   );
 }

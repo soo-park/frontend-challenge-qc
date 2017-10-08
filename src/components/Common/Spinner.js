@@ -5,9 +5,9 @@ const Preloader = (props) => {
   return (
     <div className="preloader loading">
       <Spinner
-        size="64px"
-        height="64px"
-        width="64px"
+        size="30px"
+        height="30px"
+        width="30px"
         color="grey"
         thickness={5}
         gap={3}

@@ -7,7 +7,8 @@ class App extends Component {
     this.state = {
       view: 'List',
       items: {},
-      currentItem: null
+      currentItem: null,
+      languages: []
     };
     this.handleCurrentItem = this.handleCurrentItem.bind(this);
     this.handleViewChange = this.handleViewChange.bind(this);
@@ -23,7 +24,10 @@ class App extends Component {
 
   // later, put API call here
   componentWillMount() {
-    this.setState({items: this.props.items})
+    this.setState({
+      items: this.props.items,
+      languages: this.props
+    })
   }
 
   render() {
