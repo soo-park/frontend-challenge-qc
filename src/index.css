@@ -1,58 +1,70 @@
+/* 
+
+Usually, the code will have more components to make the eniter app modulized.
+However, Codepen was requested to be used to submit the code.
+Since Codepen allows only 10 files for free account unless you pay annual fee,
+the following list of things are adjusted to accomodate:
+
+- Components and helper functions were consolidated to fit into the limitation.
+- Redux, Thunk, Sass could not be used because they need more files
+- README.md could not be generated (thus, these comment lines)
+- Since Codepen does not allow any media only one SVG image was used
+- The mock api server file generated was substituted with hard-coded data
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 body {
   background-color:#eeeeee;
+  color: #888;  
   font-family: Proxima Nova, Montserrat, Helvetica, sans-serif;
 }
 
 @media (max-width: 600px) {
-  body{font-size: 4vw;}
+  body{font-size: 3vw;}
 }
 
 .board {
   margin: 1em;
   padding-bottom: 2rem;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   border-radius: .25rem;
   background-color: white;
 }
 
-/* nav-bar adjustment */
-.navbar-brand {
+/* menu */
+.menu {
+  height: 6rem;
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+  color: grey;
+  padding: 2rem 0 0 0;
+}
+
+.menu-brand {
     position: absolute;
     width: 100%;
     left: 0;
     text-align: left;
     margin:0 auto;
+    font-size: 1.5rem;
 }
 
-.navbar {
-  margin-bottom: 0;
+.menu-item {
+  margin: 0 1em 0 0;
+  font-size: 1rem;
 }
 
-.navbar-collapse.collapse {
-  display: block!important;
-}
-
-.navbar-nav>li, .navbar-nav {
-  float: left !important;
-}
-
-.navbar-nav.navbar-right:last-child {
-  margin-right: -15px !important;
-}
-
-.navbar-right {
-  float: right!important;
-}
-
-.navbar-toggle {
-    z-index: 0;
+.card-counter {
+  padding: 0 1em 0 1em;
+  font-size: 0.5em;
+  border: 1px solid grey;
+  margin: 0 5rem 0 5rem;
+  border-radius: 1em;
 }
 
 /* loading font awesome to react */
-.fawesome {
-  color: #888888;
-}
-
 .upload-top-menu-icon:before {
   content: "\f0ee";
 	font-family: FontAwesome;
@@ -83,16 +95,19 @@ body {
 
 .card-element {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  color: #888888;
 }
 
 .card-top {
   margin: 0.5rem 0 0.5rem 0;
 }
 
+.language {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5em;
+}
+
 .select-all {
   margin:  2rem 0 1rem 2rem;
-  color: #888888;
 }
 
 .add-impression {
@@ -104,7 +119,13 @@ body {
 }
 
 .text-black {
-  color: #333333 
+  color: #555 
+}
+
+.left {
+  position: absolute;
+  left: 2em;
+  vertical-align: center;
 }
 
 .right {
@@ -116,6 +137,25 @@ body {
 .overimage {
   margin-top: 0.5rem;
   color: #cccccc;
+}
+
+.overimage-bar {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent 70%, #aaaaaa 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.overimage-bar:hover {
+  background-image: linear-gradient(to bottom, transparent 70%, #777777 100%);
 }
 
 /*image in item card*/
@@ -137,7 +177,14 @@ body {
   text-align: center;
   height: 20vh;
   margin-bottom: 1rem;
+}
+
+.suit-image {
   padding: 0.3rem;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 /* fade-in animation for the image in item card*/
@@ -165,5 +212,3 @@ body {
 		opacity: 1;
 	}
 }
-
-/* clickables: make the mouse change when hover */
