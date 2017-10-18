@@ -1,4 +1,4 @@
-# Front-end challenge
+# React card list
 
 Usually, the code will have more components to make the entire app modulated.
 However, Codepen was requested to be used to submit the code.
